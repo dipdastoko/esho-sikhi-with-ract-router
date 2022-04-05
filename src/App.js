@@ -6,6 +6,7 @@ import About from './cpmponents/About/About';
 import Services from './cpmponents/Services/Services';
 import NotFound from './cpmponents/NotFound/NotFound';
 import Home from './cpmponents/Home/Home';
+import Footer from './cpmponents/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/services' element={<Services></Services>}></Route>
           <Route path='/*' element={<NotFound></NotFound>}></Route>
         </Routes>
+        <Footer></Footer>
       </BrowserRouter>
 
     </div>

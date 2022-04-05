@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     return (
@@ -10,13 +12,17 @@ const Header = () => {
             {/* header upper portion */}
             <div className='d-flex justify-content-between'>
                 <h2 className='bg-primary text-white p-3 rounded-circle'>Esho Sikhi</h2>
-                <div>
-                    <h5 className='mb-0 fw-bold'><i>E-mail</i></h5>
-                    <small className='text-decoration-underline text-primary'>eshosikhi@gmail.com</small>
+                <div className='d-flex'>
+
+                    <div>
+                        <h5 className='mb-0 fw-bold'><i>E-mail</i></h5>
+
+                        <small className='text-decoration-underline text-primary'><FontAwesomeIcon icon={faEnvelope} /> eshosikhi@gmail.com</small>
+                    </div>
                 </div>
                 <div>
                     <h5 className='mb-0 fw-bold'><i>Call</i></h5>
-                    <small className=' text-primary'>01256983657</small>
+                    <small className=' text-primary'><FontAwesomeIcon icon={faPhone} /> 01256983657</small>
                 </div>
             </div>
 

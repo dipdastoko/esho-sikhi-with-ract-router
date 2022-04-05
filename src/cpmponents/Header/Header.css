@@ -1,8 +1,4 @@
-.navl {
-    color: whitesmoke;
-
-}
-
-.navl:hover {
-    color: brown;
+.img {
+    height: 60px;
+    width: 60px;
 }

@@ -4,29 +4,73 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div>
+
+        <div className='mt-2 mx-5'>
+
+            {/* header upper portion */}
             <div className='d-flex justify-content-between'>
-                <h1>Organization</h1>
-                <h3>Email</h3>
-                <h3>Call</h3>
-                <button>Apply</button>
+                <h2 className='bg-primary text-white p-3 rounded-circle'>Esho Sikhi</h2>
+                <div>
+                    <h5 className='mb-0 fw-bold'><i>E-mail</i></h5>
+                    <small className='text-decoration-underline text-primary'>eshosikhi@gmail.com</small>
+                </div>
+                <div>
+                    <h5 className='mb-0 fw-bold'><i>Call</i></h5>
+                    <small className=' text-primary'>01256983657</small>
+                </div>
             </div>
-            <div className='d-flex justify-content-between bg-dark mt-2 mx-5'>
+
+            {/* Header lower portion links */}
+            <div className='d-flex justify-content-between bg-dark mt-3'>
                 <div className='d-flex align-items-start bg-dark p-3 '>
+
                     <NavLink
+                        style={({ isActive }) => {
+                            return {
+                                color: isActive ? "red" : "white",
+                            };
+                        }}
                         className='text-decoration-none'
-                        to='/'
-                    >
-                        <span className='navl'>Home</span>
+                        to='/'>
+
+                        <span>Home</span>
+
                     </NavLink>
-                    <NavLink className='text-decoration-none' to='/'>
-                        <span className='ms-5 navl'>Services</span>
+
+                    <NavLink
+
+                        style={({ isActive }) => {
+                            return {
+                                color: isActive ? "red" : "white",
+                            };
+                        }}
+                        className='text-decoration-none' to='/services'>
+
+                        <span className='ms-5'>Services</span>
+
                     </NavLink>
-                    <NavLink className='text-decoration-none' to='/'>
-                        <span className='ms-5 navl'>About</span>
+
+                    <NavLink
+                        style={({ isActive }) => {
+                            return {
+                                color: isActive ? "red" : "white",
+                            };
+                        }}
+                        className='text-decoration-none' to='/about'>
+
+                        <span className='ms-5'>About</span>
+
                     </NavLink>
-                    <NavLink className='text-decoration-none' to='/'>
-                        <span className='ms-5 navl'>Contact</span>
+
+                    <NavLink
+                        style={({ isActive }) => {
+                            return {
+                                color: isActive ? "red" : "white",
+                            };
+                        }} className='text-decoration-none' to='/contact'>
+
+                        <span className='ms-5'>Contact</span>
+
                     </NavLink>
                 </div>
                 <div>

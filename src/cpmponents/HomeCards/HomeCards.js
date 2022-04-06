@@ -13,7 +13,7 @@ const HomeCards = props => {
                         <p>Trainer: <b>{trainer}</b></p>
                         <small>Duration: {duration}</small>
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">See Details</Button>
                 </Card.Body>
             </Card>
         </div>

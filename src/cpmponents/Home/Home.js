@@ -20,7 +20,7 @@ const Home = () => {
                                 key={course.id}
                                 course={course}></HomeCards>
                         }
-
+                        return course.id;
                     })
                 }
             </div>

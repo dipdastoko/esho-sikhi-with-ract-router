@@ -7,7 +7,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
     return (
 
-        <div className='mt-2 mx-5'>
+        <div className='mt-2 mx-5 header'>
 
             {/* header upper portion */}
             <div className='d-flex justify-content-between'>

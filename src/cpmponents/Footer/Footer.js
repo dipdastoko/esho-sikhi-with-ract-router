@@ -7,7 +7,7 @@ import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 
 const Footer = () => {
     return (
-        <div className='fixed-bottom bg-dark text-white'>
+        <div className=' bg-dark text-white'>
             <div className=' d-flex justify-content-between p-3'>
                 <div style={{ width: '250px' }}>
                     <h3>About Us</h3>
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
             <hr />
             <div style={{ width: '300px' }} className='mx-auto'>
-                <small><FontAwesomeIcon icon={faCopyright} />2022 DipDasToko | All Rights Reserved</small>
+                <small><FontAwesomeIcon icon={faCopyright} /> 2022 DipDasToko | All Rights Reserved</small>
             </div>
         </div>
     );

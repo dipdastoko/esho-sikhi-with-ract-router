@@ -15,7 +15,7 @@ const CourseDetails = () => {
     return (
         <div className='text-center'>
             <h2>Course Name: Learning {selectedLanguage?.language}</h2><br />
-            <img style={{ height: '250px', width: '250px' }} src={selectedLanguage?.img} alt="" />
+            <img style={{ height: '350px', width: '350px' }} src={selectedLanguage?.img} alt="" />
             <h5>Trainer: {selectedLanguage?.trainer}</h5>
             <h5>Duration: {selectedLanguage?.duration}</h5>
             <h5>Fee: ${selectedLanguage?.fee}</h5><br />

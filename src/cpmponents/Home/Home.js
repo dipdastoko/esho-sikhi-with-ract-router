@@ -26,7 +26,7 @@ const Home = () => {
             </div>
             <div className='text-center mt-4'>
                 <Link to='/services'>
-                    <Button variant="danger" className='rounded-pill'>All Courses <FontAwesomeIcon icon={faArrowRight} /></Button>
+                    <Button style={{ width: '200px', height: '60px', border: '2px solid goldenrod', color: 'yellow' }} variant="success" className='rounded-pill'>All Courses <FontAwesomeIcon icon={faArrowRight} /></Button>
                 </Link>
             </div>
         </div >

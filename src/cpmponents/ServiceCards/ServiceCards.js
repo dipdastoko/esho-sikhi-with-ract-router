@@ -1,8 +1,10 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const ServiceCards = props => {
-    const { img, language, trainer, duration } = props.course;
+    const { id, img, language, trainer, duration } = props.course;
+    const url = `/services/${id}`;
     return (
         <div className='mx-auto'>
             <Card style={{ width: '18rem' }}>
@@ -14,7 +16,9 @@ const ServiceCards = props => {
                         <p>Trainer: <b>{trainer}</b></p>
                         <small>Duration: {duration}</small>
                     </Card.Text>
-                    <Button variant="primary">See Details</Button>
+                    <Link to={url}>
+                        <Button variant="primary">See Details</Button>
+                    </Link>
                 </Card.Body>
             </Card>
         </div>

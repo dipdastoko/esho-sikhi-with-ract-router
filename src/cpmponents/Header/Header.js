@@ -1,17 +1,19 @@
 import React from 'react';
 import './Header.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     return (
 
-        <div className='mt-2 mx-5 header'>
+        <div className='header mt-3'>
 
             {/* header upper portion */}
-            <div className='d-flex justify-content-between'>
-                <h2 className='bg-primary text-white p-3 rounded-circle'>Esho Sikhi</h2>
+            <div className='d-flex justify-content-between mx-3'>
+                <Link to='/' className='text-decoration-none'>
+                    <h2 className='bg-primary text-white p-3 rounded-circle'>Esho Sikhi</h2>
+                </Link>
                 <div className='d-flex'>
 
                     <div>

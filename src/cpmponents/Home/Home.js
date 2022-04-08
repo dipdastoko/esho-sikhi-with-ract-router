@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from 'react-bootstrap';
 import useFakeData from '../../Hooks/useFakeData';
 import HomeCards from '../HomeCards/HomeCards';
@@ -20,7 +19,7 @@ const Home = () => {
                                 key={course.id}
                                 course={course}></HomeCards>
                         }
-                        return course.id;
+
                     })
                 }
             </div>

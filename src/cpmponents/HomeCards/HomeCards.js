@@ -12,7 +12,7 @@ const HomeCards = props => {
                 <Card.Body>
                     <Card.Title>{language}</Card.Title>
                     <Card.Text>
-                        <p>Trainer: <b>{trainer}</b></p>
+                        <p>Trainer: {trainer}</p>
                         <small>Duration: {duration}</small>
                     </Card.Text>
                     <Link to={url}>

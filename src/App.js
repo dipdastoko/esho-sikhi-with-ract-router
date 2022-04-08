@@ -10,7 +10,6 @@ import Footer from './cpmponents/Footer/Footer';
 import CourseDetails from './cpmponents/CourseDetails/CourseDetails';
 
 function App() {
-
   return (
 
     <div>

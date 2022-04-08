@@ -1,10 +1,7 @@
 import React from 'react';
-import useFakeData from '../../Hooks/useFakeData';
 import './About.css';
 
 const About = () => {
-    const courses = useFakeData();
-    console.log(courses);
     return (
         <div>
             <div className='about my-4 mx-4 bg-primary text-white'>

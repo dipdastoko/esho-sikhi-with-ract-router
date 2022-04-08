@@ -11,7 +11,7 @@ const CourseDetails = () => {
             .then(res => res.json())
             .then(data => setLanguages(data))
     }, []);
-    const selectedLanguage = languages.find(language => language.id == id);
+    const selectedLanguage = languages.find(language => language.id === parseInt(id));
 
     return (
         <div className='text-center p-4'>
